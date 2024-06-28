@@ -64,12 +64,11 @@ body, html {
 .two--two {
     background: #e5e7eb;
     border-radius: 5px;
-    width: 22%;
 }
 
 .two--two p {
     position: relative;
-    bottom: 270px;
+    bottom: 230px;
     margin-left: 5px;
     width: 50px;
     background: blue;
@@ -81,11 +80,10 @@ body, html {
 .three--three {
     background: #e5e7eb;
     border-radius: 5px;
-    width: 22%;
 }
 .three--three p {
     position: relative;
-    bottom: 270px;
+    bottom: 230px;
     width: 50px;
     background: blue;
     color: #fff;
@@ -97,11 +95,10 @@ body, html {
 .four--four {
     background: #e5e7eb;
     border-radius: 5px;
-    width: 22%;
 }
 .four--four p {
     position: relative;
-    bottom: 270px;
+    bottom: 230px;
     width: 50px;
     background: blue;
     color: #fff;
@@ -111,12 +108,11 @@ body, html {
 }
 .one-one{
     background: #e5e7eb;
-    width: 22%;
     border-radius: 5px;
 }
 .one-one p {
     position: relative;
-    bottom: 270px;
+    bottom: 230px;
     margin-left: 10px;
     width: 50px;
     background: blue;
@@ -128,13 +124,12 @@ body, html {
 
 .two-two {
     background: #e5e7eb;
-    width: 22%;
     border-radius: 5px;
 }
 
 .two-two p {
     position: relative;
-    bottom: 270px;
+    bottom: 230px;
     margin-left: 10px;
     width: 50px;
     background: blue;
@@ -146,13 +141,12 @@ body, html {
 
 .three-three {
     background: #e5e7eb;
-    width: 22%;
     border-radius: 5px;
 }
 
 .three-three p {  
     position: relative;
-    bottom: 270px;
+    bottom: 230px;
     margin-left: 10px;
     width: 50px;
     background: blue;
@@ -164,7 +158,6 @@ body, html {
 
 .four-four {
     background: #e5e7eb;
-    width: 22%;
     border-radius: 5px;
 }
 
