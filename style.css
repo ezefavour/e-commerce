@@ -524,6 +524,48 @@ body, html {
     .last-first{
         margin-top: 80px;
     }
+    .one-one{
+        margin-top: 15px;
+    }
+    .two-two{
+        margin-top: 15px;
+    }
+    .three-three{
+        margin-top: 15px;
+    }
+    .four-four{
+        margin-top: 15px;
+    }
+    .one--one{
+        margin-top: 15px;
+    }
+    .two--two{
+        margin-top: 15px;
+    }
+    .three--three{
+        margin-top: 15px;
+    }
+    .four--four{
+        margin-top: 15px;
+    }
+    .this4 input {
+        width: 80%;
+        padding:  5px;
+        outline: 0;
+        border: 0;
+    }
+    .this-cover {
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    
+    .this4 .this-cover i {
+        background: blue;
+        padding: 20px;
+        flex: 1;
+    }
+
 }
 
 
