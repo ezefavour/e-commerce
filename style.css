@@ -1,4 +1,1849 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* First Div */
+.first-div {
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.sub-content  { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first-div .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.first-div h1 {
+    color: #fff;
+}
+
+.first-div .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-div .cover .sub i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+
+.sub-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub-content .hero {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: white;
+    text-transform: capitalize;
+}
+
+.hero h5 {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 1em;
+}
+
+.first-div button {
+    padding: 10px 20px;
+    outline: 5px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-weight: 500;
+    color: #fff;
+    transition: 1s;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.first-div button:hover {
+    background: #f43f5e;
+    cursor: pointer;
+    color: #f8fafc;
+}
+
+.sub-content img {
+    width: 80%;
+    max-width: 400px;
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(60px);
+    }
+}
+
+.last-first {
+    display: flex;
+    align-items: center;
+}
+
+.first-div input {
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    background: #0000;
+}
+
+/* Second div */
+.parents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e5e7eb;
+}
+
+.parents > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.parents .first-son i,
+.parents .second-son i,
+.parents .third-son i,
+.parents .forty-son i {
+    margin-right: 10px;
+}
+
+.parents .second-son,
+.parents .third-son,
+.parents .forty-son {
+    border-left: 3px solid black;
+}
+
+.parents .second-son i,
+.parents .third-son i,
+.parents .forty-son i {
+    margin-left: 20px;
+}
+
+.parents .another,
+.parents .another1,
+.parents .another2,
+.parents .another3 {
+    margin-left: 10px;
+}
+
+/* Third-stage */
+
+
+/*god help us*/
+.middle-parents {
+    background: #d4d4d8;
+    padding: 20px;
+}
+
+.middle-parents .my-side,
+.middle-parents .my-hero,
+.middle-parents .my-hero2,
+.middle-parents .my-hero3,
+.middle-parents .complelte {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.one, .this1, .this2, .this3, .this4 {
+   
+}
+
+.one img, .two img, .three img, .four img, .one--one img, .two--two img, .three--three img, .four--four img {
+    width: 100%;
+}
+
+.one a {
+    text-decoration: none;
+}
+
+.best {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer */
+footer .my-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer .my-content div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.this4 input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 0;
+    margin-right: 10px;
+}
+
+.this-cover {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.this-cover i {
+    background: blue;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .first-div .cover {
+        flex-direction: column;
+    }
+    
+    .first-div .cover .sub {
+        margin-top: 20px;
+    }
+
+    .sub-content {
+        flex-direction: column;
+    }
+
+    .sub-content .hero {
+        text-align: center;
+    }
+
+    .middle-parents .my-side, .middle-parents .my-hero, .middle-parents .my-hero2, .middle-parents .my-hero3, .middle-parents .complelte {
+        flex-direction: column;
+    }
+    .middle-parents .my-side, .middle-parents .my-hero, p{
+        display: none;
+    }
+
+    .best {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.first-div {
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.first-div .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.first-div h1 {
+    color: #fff;
+}
+
+.first-div .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-div .cover .sub i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.sub-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub-content .hero {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.hero h5 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.first-div button {
+    padding: 10px 20px 10px 20px;
+    outline: 5px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-left: 5%;
+    color: #fff;
+    transition: 1s;
+    background: transparent;
+}
+
+.first-div button:hover {
+    background: #f43f5e;
+    cursor: pointer;
+    color: #f8fafc;
+}
+
+.sub-content img {
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(60px);
+    }
+}
+
+.last-first {
+    display: block;
+    align-items: center;
+}
+
+.first-div input {
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    background: #0000;
+}
+
+/* Second div */
+/*.parents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e5e7eb;
+}
+
+.parents .first-son {
+    display: flex;
+    align-items: center;
+}
+
+.first-son .another {
+    margin-left: 10px;
+}
+
+.parents .first-son i {
+    display: flex;
+}
+
+.parents .second-son {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid black;
+}
+
+.second-son .another1 {
+    display: block;
+    margin-left: 10px;
+}
+
+.parents .second-son i {
+    margin-left: 50px;
+}
+
+.parents .third-son {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid black;
+}
+
+.third-son .another2 {
+    display: block;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+.parents .third-son i {
+    margin-left: 50px;
+}
+
+.parents .forty-son {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid black;
+}
+
+.forty-son .another3 {
+    display: block;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.parents .forty-son i {
+    margin-left: 50px;
+}
+
+/* Third-stage */
+.middle-parents {
+    background: #d4d4d8;
+    padding: 20px;
+}
+
+.middle-parents .my-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.my-hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.my-hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.one {
+    line-height: 30px;
+}
+
+.one a {
+    text-decoration: none;
+}
+
+.two img{
+    width: 100%;
+}
+
+.two p {
+    position: absolute;
+    bottom: 100%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.three {
+    background: #e5e7eb;
+}
+.three img{
+    width: 100%;
+}
+
+.three p {
+    position: absolute;
+    bottom: 100%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four {
+    background: #e5e7eb;
+}
+.four img{
+    width: 100%;
+}
+
+.four p {
+    position: absolute;
+    bottom: 100%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.one--one p {
+    position: absolute;
+    bottom: -170px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.one--one img{
+    width: 100%;
+}
+
+.two--two {
+    background: #e5e7eb;
+}
+
+.two--two p {
+    position: absolute;
+    bottom: -210px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.two--two img{
+    width: 100%;
+}
+
+.three--three {
+    background: #e5e7eb;
+}
+.three--three img{
+    width: 100%;
+}
+
+.three--three p {
+    position: absolute;
+    bottom: -210px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four--four {
+    background: #e5e7eb;
+}
+.four--four img{
+    width: 100%;
+}
+
+.four--four p {
+    position: absolute;
+    bottom: -210px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last p {
+    position: absolute;
+    bottom: 19%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last--last p {
+    position: absolute;
+    bottom: 19%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last---last p {
+    position: absolute;
+    bottom: -700px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.one-one {
+    border: 1px solid black;
+}
+.one-one img{
+    width: 100%;
+}
+
+.one-one p {
+    position: absolute;
+    bottom: -645px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.two-two {
+    background: #e5e7eb;
+}
+
+.two-two p {
+    position: absolute;
+    bottom: -645px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.three-three {
+    background: #e5e7eb;
+}
+
+.three-three p {
+    position: absolute;
+    bottom: -px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four-four {
+    background: #e5e7eb;
+}
+
+.four-four p {
+    position: absolute;
+    bottom: -645px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.park1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park9 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.three-three img {
+    width: 200px;
+    text-align: center;
+}
+
+.best {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complelte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.this1 {
+    line-height: 40px;
+}
+
+.this2 {
+    line-height: 40px;
+}
+
+.this3 {
+    line-height: 40px;
+}
+
+.this4 {
+    line-height: 50px;
+}
+
+.this4 input {
+    width: 80%;
+    padding: 10px 20px 10px 20px;
+    outline: 0;
+    border: 0;
+}
+
+.this-cover {
+    border: 1px solid #ccc;
+}
+
+.this4 .this-cover i {
+    background: blue;
+    padding: 20px;
+}
+/* Styles for all screens */
+
+  
+  /* Styles for screens smaller than medium (sm) */
+  @media (max-width: 768px) {
+    .first-div {
+      padding: 10px;
+      width: 100%;
+      height: 100vh;
+    }
+    .hero h1 {
+      font-size: 30px;
+    }
+    .first-div img{
+        width: 60%;
+    }
+    .parents{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .parents .second-son,
+  .parents .third-son,
+  .parents .forty-son {
+    border-left:none ; 
+    margin-bottom: 30px;
+  }
+  .parents .second-son h2,
+  .parents .third-son h2,
+  .parents .forty-son h2{
+    font-size: 20px;
+  }
+  .parents .first-son i,
+.parents .second-son i,
+.parents .third-son i,
+.parents .forty-son i {
+  margin-left: 10px;
+}
+
+  /*------------------------middle -side-------*/
+  .middle-parents {
+    background: #d4d4d8;
+    padding: 20px;
+}
+
+.middle-parents .my-side {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-hero {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.my-hero2 {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.my-hero3 {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.one {
+    line-height: 30px;
+}
+
+.one a {
+    text-decoration: none;
+}
+.two{
+    border: 1px solid black;
+}
+
+.two img{
+    width: 100%;
+}
+
+.two p {
+    position: absolute;
+    bottom: -575px;
+    background: black;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.three {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.three img{
+    width: 100%;
+}
+
+.three p {
+    position: absolute;
+    bottom: -835px;
+    background: brown;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.four img{
+    width: 100%;
+}
+
+.four p {
+    position: absolute;
+    bottom: -189%;
+    background: gold;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+.one--one{
+    border: 1px solid black;
+}}
+/*.one--one p {
+    position: absolute;
+    bottom: -170px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    z-index: 1;
+}*//*
+.one--one img{
+    width: 100%;
+}
+
+.two--two {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.two--two p {
+    position: absolute;
+    bottom: -288%;
+    background: darkkhaki;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.two--two img{
+    width: 100%;
+}
+
+.three--three {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.three--three img{
+    width: 100%;
+}
+
+.three--three p {
+    position: absolute;
+    bottom: -333%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four--four {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.four--four img{
+    width: 100%;
+}
+
+.four--four p {
+    position: absolute;
+    bottom: -377%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last p {
+    position: absolute;
+    bottom: -500%;
+    background: darkslategray;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+/*.last--last p {
+    position: absolute;
+    bottom: 19%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}*/
+
+/*.last---last p {
+    position: absolute;
+    bottom: -700px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}*/
+
+/*.one-one {
+    border: 1px solid black;
+}
+.one-one img{
+    width: 100%;
+}
+
+.one-one p {
+    position: absolute;
+    bottom: -447%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.two-two {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.two-two p {
+    position: absolute;
+    bottom: -492%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.three-three {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.three-three p {
+    position: absolute;
+    bottom: -540%;
+    background: red;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four-four {
+    background: #e5e7eb;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.four-four img{
+    width: 100%;
+}
+
+.four-four p {
+    position: absolute;
+    bottom: -596%;
+    background: yellow;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.park1 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park2 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park3 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park4 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park5 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park6 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park7 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park8 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park9 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.park10 {
+    display: block;
+    align-items: center;
+    justify-content: left;
+}
+
+.three-three img {
+    width: 100%;
+    
+}
+
+.best {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complelte {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.this1 {
+    line-height: 40px;
+}
+
+.this2 {
+    line-height: 40px;
+}
+
+.this3 {
+    line-height: 40px;
+}
+
+.this4 {
+    line-height: 50px;
+}
+
+.this4 input {
+    width: 80%;
+    padding: 10px 20px 10px 20px;
+    outline: 0;
+    border: 0;
+}
+
+.this-cover {
+    border: 1px solid #ccc;
+}
+
+.this4 .this-cover i {
+    background: blue;
+    padding: 10px;
+} 
+
+
+}
+  @media (min-width: 768px) {
+    .first-div {
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 50px;
+    }
+    .parents .second-son,
+    .parents .third-son,
+    .parents .forty-son {
+      border-left:50px ;
+  }
+  
+.parents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #e5e7eb;
+}
+
+.parents .first-son,
+.parents .second-son,
+.parents .third-son,
+.parents .forty-son {
+  display: flex;
+  align-items: center;
+}
+
+.parents .first-son .another,
+.parents .second-son .another1,
+.parents .third-son .another2,
+.parents .forty-son .another3 {
+  display: block;
+  margin-left: 10px;
+}
+
+.parents .first-son i,
+.parents .second-son i,
+.parents .third-son i,
+.parents .forty-son i {
+  margin-left: 10px; /* Reduce default margin for icons on all screens */
+/*}
+.middle-parents {
+    background: #d4d4d8;
+    padding: 20px;
+}
+
+.middle-parents .my-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.my-hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.my-hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.one {
+    line-height: 30px;
+}
+
+.one a {
+    text-decoration: none;
+}
+
+.two img{
+    width: 100%;
+}
+
+.two p {
+    position: absolute;
+    bottom: 100%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.three {
+    background: #e5e7eb;
+}
+.three img{
+    width: 100%;
+}
+
+.three p {
+    position: absolute;
+    bottom: 100%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four {
+    background: #e5e7eb;
+}
+.four img{
+    width: 100%;
+}
+
+.four p {
+    position: absolute;
+    bottom: 100%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.one--one p {
+    position: absolute;
+    bottom: -170px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.one--one img{
+    width: 100%;
+}
+
+.two--two {
+    background: #e5e7eb;
+}
+
+.two--two p {
+    position: absolute;
+    bottom: -210px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.two--two img{
+    width: 100%;
+}
+
+.three--three {
+    background: #e5e7eb;
+}
+.three--three img{
+    width: 100%;
+}
+
+.three--three p {
+    position: absolute;
+    bottom: -210px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four--four {
+    background: #e5e7eb;
+}
+.four--four img{
+    width: 100%;
+}
+
+.four--four p {
+    position: absolute;
+    bottom: -210px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last p {
+    position: absolute;
+    bottom: 19%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last--last p {
+    position: absolute;
+    bottom: 19%;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.last---last p {
+    position: absolute;
+    bottom: -700px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.one-one {
+    border: 1px solid black;
+}
+.one-one img{
+    width: 100%;
+}
+
+.one-one p {
+    position: absolute;
+    bottom: -645px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.two-two {
+    background: #e5e7eb;
+}
+
+.two-two p {
+    position: absolute;
+    bottom: -645px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.three-three {
+    background: #e5e7eb;
+}
+
+.three-three p {
+    position: absolute;
+    bottom: -px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.four-four {
+    background: #e5e7eb;
+}
+
+.four-four p {
+    position: absolute;
+    bottom: -645px;
+    background: blue;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+}
+
+.park1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park9 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.park10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.three-three img {
+    width: 200px;
+    text-align: center;
+}
+
+.best {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complelte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.this1 {
+    line-height: 40px;
+}
+
+.this2 {
+    line-height: 40px;
+}
+
+.this3 {
+    line-height: 40px;
+}
+
+.this4 {
+    line-height: 50px;
+}
+
+.this4 input {
+    width: 80%;
+    padding: 10px 20px 10px 20px;
+    outline: 0;
+    border: 0;
+}
+
+.this-cover {
+    border: 1px solid #ccc;
+}
+
+.this4 .this-cover i {
+    background: blue;
+    padding: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for screens smaller than medium (sm) */
+/*@media (max-width: 768px) {
+  .parents {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    /*padding: 10px; /* Adjust padding for smaller viewports */
+ /* }
+
+  .parents .second-son,
+  .parents .third-son,
+  .parents .forty-son {
+    border-left:none ; /* Remove unnecessary borders on small screens */
+ /* }
+
+  .parents .first-son i,
+  .parents .second-son i,
+  .parents .third-son i,
+  .parents .forty-son i {
+    margin-left: 0; /* Reset icon margins on small screens */
+ /* }
+}
+
+/* You can add additional media queries for larger screens (md, lg, xl) 
+  to fine-tune styles as needed */
+
+/*@media (max-width: 1200px) {
+    .first-div .cover, .sub-content {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h5 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .parents, .middle-parents .my-side, .my-hero, .my-hero2, .my-hero3, .park1, .park2, .park3, .park4, .park5, .park6, .park7, .park8, .park9, .park10 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h5 {
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .first-div button {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-content, .middle-parents .my-side, .my-hero, .my-hero2, .my-hero3, .park1, .park2, .park3, .park4, .park5, .park6, .park7, .park8, .park9, .park10 {
+        flex-direction: column;
+    }
+
+    .one p, .two p, .three p, .four p, .one--one p, .two--two p, .three--three p, .four--four p, .last p, .last--last p, .last---last p, .one-one p, .two-two p, .three-three p, .four-four p {
+        bottom: 10%;
+    }
+
+    .parents .second-son, .parents .third-son, .parents .forty-son {
+        border-left: none;
+        border-top: 3px solid black;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero h5 {
+        font-size: 14px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+    .first-div button {
+        padding: 10px;
+    }
+
+    .first-div input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sub-content, .middle-parents .my-side, .my-hero, .my-hero2, .my-hero3, .park1, .park2, .park3, .park4, .park5, .park6, .park7, .park8, .park9, .park10, .best, .complelte, .my-content {
+        flex-direction: column;
+    }
+}
+
+
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -89,364 +1934,7 @@
     margin-left: 10px;
     background: #0000;
 }
-/*second div*/
 
-.parents{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background: #e5e7eb;
-}
-.parents .first-son{
-    display: flex;
-    align-items: center;
-}
-.first-son .another{
-    margin-left: 10px;
-}
-.parents .first-son i{
-    display: flex;
-}
-.parents .second-son{
-    display: flex;
-    align-items: center;
-    border-left: 3px solid black;
-}
-.second-son .another1{
-    display: block;
-    margin-left: 10px;
-}
-.parents .second-son i{
-    margin-left: 50px;
-}
-
-.parents .third-son{
-    display: flex;
-    align-items: center;
-    border-left: 3px solid black;
-}
-.third-son .another2{
-    display: block;
-    margin-left: 10px;
-    margin-left: 10px;
-}
-.parents .third-son i{
-    margin-left: 50px;
-}
-
-.parents .forty-son{
-    display: flex;
-    align-items: center;
-    border-left: 3px solid black;
- 
-}
-.forty-son .another3{
-    display: block;
-    margin-left: 10px;
-    align-items: center;
-}
-.parents .forty-son i{
-    margin-left: 50px;
-}
-/*------------------------third-stage-------*/
-
-.middle-parents{
-    background: #d4d4d8;
-    padding: 20px;
-    
-}
-.middle-parents .my-side{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.my-hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.my-hero2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.my-hero3{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.one{
-    line-height: 30px;
-}
-.one a{
-    text-decoration: none;
-}
-.two{
-    
-}
-.two p{
-    position: absolute;
-    bottom: 15%;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.three{
-    background: #e5e7eb;
-}
-.three p{
-    position: absolute;
-    bottom: 15%;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-
-.four{
-    background: #e5e7eb;
-}
-.four p{
-    position: absolute;
-    bottom: 15%;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-
-.one--one p{
-    position: absolute;
-    bottom: -170px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-    z-index: 1;
-}
-.two--two{
-    background: #e5e7eb;
-    
-}
-.two--two p{
-    position: absolute;
-    bottom: -210px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-    z-index: 1;
-}
-.three--three{
-    background: #e5e7eb;
-}
-.three--three p{
-    position: absolute;
-    bottom: -210px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.four--four{
-    background: #e5e7eb ;
-}
-.four--four p{
-    position: absolute;
-    bottom: -210px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.last p{
-    position: absolute;
-    bottom: 19%;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.last--last p{
-    position: absolute;
-    bottom: 19%;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.last---last p{
-    position: absolute;
-    bottom: -700px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.one-one{
-    border: 1px solid black;
-}
-.one-one p{
-    position: absolute;
-    bottom: -645px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.two-two{
-    background:  #e5e7eb ;
-}
-.two-two p{
-    position: absolute;
-    bottom: -645px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.three-three{
-    background:  #e5e7eb ;
-}
-.three-three p{
-    position: absolute;
-    bottom: -645px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.four-four{
-    background:  #e5e7eb ;
-}
-.four-four p{
-    position: absolute;
-    bottom: -645px;
-    background: blue;
-    color: #fff;
-    padding: 3px 10px 3px 10px;
-    border-radius: 15px;
-}
-.park1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park3{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park4{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park5{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park6{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park7{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park8{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park9{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.park10{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.three-three img{
-    width: 200px;
-    text-align: center;
-
-}
-.best{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-
-.complelte{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.my-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-transform: capitalize;
-    margin-top: 20px;
-}
-.this1{
-    line-height: 40px;
-}
-.this2{
-    line-height: 40px;
-}
-.this3{
-    line-height: 40px;
-}
-.this4{
-    line-height: 50px;
-}
-.this4 input{
-    width: 80%;
-    padding: 10px 20px 10px 20px;
-    outline: 0;
-    border: 0;
-}
-.this-cover{
-    border: 1px solid #ccc;  
-}
-.this4 .this-cover i{
-    background: blue;
-    padding:20px;
-    
-}
-@media(min-aspect-ratio:16/9) {
-    .background-clip{
-        width: 100%;
-        height: auto;
-    }
-}
-@media(max-aspect-ratio:16/9) {
-    .background-clip{
-        width: auto;
-        height: 100%;
-    }
-}
 
 
 
