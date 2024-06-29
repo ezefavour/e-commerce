@@ -1,5 +1,326 @@
-/* Global Styles */
-* {
+body, html {
+    overflow-x: hidden;
+}
+p{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+
+.first-div {
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.first-div .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first-div h1 {
+    color: #fff;
+}
+
+.first-div .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-div .cover .sub i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.sub-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.sub-content .hero {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.hero h5 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.first-div button {
+    padding: 10px 20px;
+    outline: 5px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-left: 5%;
+    color: #fff;
+    transition: 1s;
+    background: transparent;
+}
+
+.first-div button:hover {
+    background: #f43f5e;
+    cursor: pointer;
+    color: #f8fafc;
+}
+
+.sub-content img {
+    max-width: 100%;
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(60px);
+    }
+}
+
+.last-first {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.first-div input {
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    background: #0000;
+}
+
+/* Second div */
+.parents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e5e7eb;
+    flex-wrap: wrap;
+}
+
+.parents > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.parents > div:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.parents i {
+    margin-right: 10px;
+}
+
+/* Third-stage */
+.middle-parents {
+    background: #d4d4d8;
+    padding: 20px;
+}
+
+.middle-parents .my-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.my-hero, .my-hero2, .my-hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.one, .two, .three, .four {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.one img, .two img, .three img, .four img {
+    width: 100%;
+    height: auto;
+    border-left: 1px solid #ccc;
+}
+.one-one img, .two-two img, .three-three img, .four-four img{
+    width: 100%;
+    height: auto;
+    border-left: 1px solid #ccc;
+}
+.one--one img, .two--two img, .three--three img, .four--four img{
+    width: 100%;
+    height: auto;
+    border-left: 1px solid #ccc;
+}
+
+
+
+.park1, .park2, .park3, .park4, .park5, .park6, .park7, .park8, .park9, .park10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.best {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complelte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.my-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: capitalize;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.my-content > div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    line-height: 40px;
+}
+
+.this4 {
+    line-height: 50px;
+}
+
+.this4 input {
+    width: 80%;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+}
+
+.this-cover {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+ #my-submit{
+    background: blue;
+    padding: 20px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .sub-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h5 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .first-div button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .first-div .cover {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .parents {
+        flex-direction: column;
+    }
+
+    .parents > div {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .best {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .best .my-angle {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero h5 {
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .first-div .cover .sub i {
+        margin-right: 5px;
+    }
+
+    .parents > div {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

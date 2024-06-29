@@ -1,4 +1,49 @@
+function good(){
+    const hero = document.getElementById('my-email');
+    const email = hero.value;
+    const heroPart =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!heroPart.test(email)){
+        alert("sorry not a valid email");
+    }else{
+        alert("great valid")
+    }
+}
 
+/*function fred() {
+    const emailInput = document.getElementById('my-email');
+    const email = emailInput.value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        alert('The email is not valid.');
+    } else {
+        alert('The email is valid.');
+    }
+}
+
+/*const form = document.getElementById("my-form");
+const nameInput = document.getElementById("my-submit");
+const emailInput = document.getElementById("my-email");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  let isValid = true;
+  
+
+  if (nameInput.value === "") {
+    isValid = false;
+    alert("Please enter your name.");
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+    isValid = false;
+    alert("Please enter a valid email address.");
+  }
+
+  if (!isValid) {
+    event.stopPropagation(); // Prevent further form validation if invalid
+  }
+});
 
 
 
@@ -67,3 +112,4 @@
         totalElement.textContent = total.toFixed(2);
     }
 });
+*/
